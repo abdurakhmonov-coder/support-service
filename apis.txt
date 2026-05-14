@@ -1,0 +1,4 @@
+db-url:     https://fooboseeshzwpzcbscmr.supabase.co
+anon-key:   sb_publishable_RdAZnIiRo3HauHpRHKOrkg_cztpn551
+
+bot-api:    8111036039:AAETnIcI4P45jEpD9FDwg6fx1_Jj3j1Ak3E

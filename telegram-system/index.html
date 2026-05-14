@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Message System</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Xabar Qoldirish</h1>
+
+    <input type="text" id="name" placeholder="Ismingiz">
+
+    <input type="email" id="email" placeholder="Email">
+
+    <textarea id="message" placeholder="Xabaringiz"></textarea>
+
+    <button onclick="sendMessage()">
+      Yuborish
+    </button>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
