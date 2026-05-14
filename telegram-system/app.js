@@ -4,7 +4,8 @@ const supabaseUrl =
 const supabaseKey =
 "sb_publishable_RdAZnIiRo3HauHpRHKOrkg_cztpn551";
 
-const client = window.supabase.createClient(
+const client =
+window.supabase.createClient(
   supabaseUrl,
   supabaseKey
 );
@@ -12,35 +13,34 @@ const client = window.supabase.createClient(
 async function sendMessage(){
 
   const name =
-    document.getElementById("name").value;
+  document.getElementById("name").value;
 
   const email =
-    document.getElementById("email").value;
+  document.getElementById("email").value;
 
   const message =
-    document.getElementById("message").value;
+  document.getElementById("message").value;
 
-  if(!name || !email || !message){
-    alert("Barcha maydonlarni to'ldiring");
-    return;
-  }
-
-  const { error } = await client
+  const { error } =
+  await client
     .from("messages")
     .insert([
       {
         name,
         email,
-        message
+        message,
+        sent:false
       }
     ]);
 
-  if(error) {
+  if(error){
 
     console.log(error);
+
     alert("Xatolik");
 
-  } else {
+  }else{
+
     alert("Yuborildi");
 
   }
